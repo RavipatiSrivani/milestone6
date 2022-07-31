@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body align="center" style="background-color:lightgrey;">
+    <h2>Error Handling!!!</h2>
+    <p id="demo"></p>
+    <script>
+        let talentio="Hello";
+        let a="";
+        try{
+        function reverseStr(talentio){
+            a= talentio.split("").reverse().join("");
+        }
+        reverseStr(talentio);
+        document.getElementById("demo").innerHTML="The reversed string is: "+a+"<br><br>" +"It's type is: "+ typeof talentio ;
+    }
+    catch(err){
+        document.getElementById("demo").innerHTML=err.message;
+    }
+    </script>
+</html>

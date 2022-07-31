@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body align="center" style="background-color:lightcyan;">
+  <h2>Control Structures..</h2>
+  <p id="demo"></p>
+  <script>
+    let t="";
+        for ( let i = 1; i <= 100; i++ )
+{
+  if ( i%3 === 0 && i%5 === 0)
+  {
+    t+="TalentioCompany"+"<br>";
+  }
+  else if ( i%3 === 0 ) 
+  {
+    t+="Talentio"+"<br>";
+  }
+  else if ( i%5 === 0 ) 
+  {
+    t+="Company"+"<br>";
+  }
+  else
+  {
+    t+=i+"<br>";
+  }
+}
+document.getElementById("demo").innerHTML=t;
+  </script>
+</body>
+</html>

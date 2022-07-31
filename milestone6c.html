@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body align="center" style="background-color:lightcyan;">
+  <h2>Numbers...</h2>
+  <p id="demo"></p>
+  <script>
+    let t="";
+    function decimals(n,d){
+        if((typeof n!=='number') || (typeof d!=='number'))
+        return false;
+        n=parseFloat(n)||0;
+        return n.toFixed(d);
+    }
+    t+=decimals(2.100212,2)+"<br><br>";
+    t+=decimals(2.100212,3)+"<br><br>";
+    t+=decimals(2100,2);
+    document.getElementById("demo").innerHTML=t;
+    </script>
+    </body>
+    </html>
